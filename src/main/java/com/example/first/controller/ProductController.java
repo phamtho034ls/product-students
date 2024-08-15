@@ -37,7 +37,7 @@ public class ProductController {
 		ProductDTO newPrd = productSercice.crateProduct(bodyProductRequest);
 		return newPrd;
 	}
-
+	int a;
 	@PutMapping("/update/{id}")
 	public ProductDTO updateProduct(@RequestBody CreateProductRequest bodyProductRequest, @PathVariable Long id) {
 		ProductDTO newPrd = productSercice.updateProduct(bodyProductRequest, id);
